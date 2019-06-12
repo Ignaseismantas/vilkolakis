@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" typoe="text/css" href="style\myStyle.css" />
+  <body>
+    <!--role-->
+    <div>
+      <p>Jūsų rolė:</p>
+      <img id="v0" src="image\Neatversta.jpg" />
+      <p id="v1">Paspauskite, kuris žaidėjas esate</p>
+      <p id="v3"></p>
+      <p id="v4"></p>
+      <input id="a1" />
+      <button id="a2" onclick="rasyti()">Rašyti</button>
+      <button id="a2" onclick="istrinti()">Ištrinti</button>
+    </div>
+    <br />
+    <!--Roliu listas-->
+    <div>
+      <button id="p1" onclick="versti1()">Werewolf</button>
+      <button id="p2" onclick="versti2()">Villager</button>
+      <button id="p3" onclick="versti3()">Seer</button>
+      <button id="p4" onclick="versti4()">Bodyguard</button>
+      <button id="p6" onclick="versti5()">Hunter</button>
+      <button id="p7" onclick="versti6()">Cult Leader</button>
+      <button id="p8" onclick="versti7()">Lycan</button>
+      <button id="p9" onclick="versti8()">Minion</button>
+    </div>
+    <br />
+    <!--Zaidejai-->
+    <div>
+      <button id="z1" onclick="zversti(event)">1</button>
+      <button id="z2" onclick="zversti(event)">2</button>
+      <button id="z3" onclick="zversti(event)">3</button>
+      <button id="z4" onclick="zversti(event)">4</button>
+      <button id="z5" onclick="zversti(event)">5</button>
+      <button id="z6" onclick="zversti(event)">6</button>
+      <button id="z7" onclick="zversti(event)">7</button>
+      <button id="z8" onclick="zversti(event)">8</button>
+      <button id="z9" onclick="zversti(event)">9</button>
+    </div>
+    <!--Nerodyti rolės-->
+    <div>
+      <br />
+      <button id="v2" onclick="nerodyti()">Nerodyti rolės</button>
+    </div>
+    <div>
+      <br />
+      <button id="d" onclick="diena()">Diena</button>
+      <button id="n" onclick="naktis()">Naktis</button>
+      <p id="faze"></p>
+    </div>
+    <script src="js\manoScript.js"></script>
+  </body>
+</html>
