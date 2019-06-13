@@ -171,6 +171,7 @@ function zversti1() {
     document.getElementById("v3").innerHTML = "1 bus išsaugotas";
     d = "z1";
   } else if (p == 4) {
+    document.getElementById("v3").innerHTML = "1 buvo priimtas į kultą";
     c1 = 1;
     p = 100;
   } else if (p == 2) {
