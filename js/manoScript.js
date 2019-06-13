@@ -619,6 +619,7 @@ function nerodyti() {
   document.getElementById("v3").innerHTML = "";
 }
 function diena() {
+  document.body.style.backgroundColor = "#fff9f7";
   if (k > 0 && y != d) {
     mirtis = document.getElementById(y).innerHTML;
     document.getElementById(y).innerHTML = "X";
@@ -629,6 +630,7 @@ function diena() {
   document.getElementById("faze").innerHTML = "Diena";
 }
 function naktis() {
+  document.body.style.backgroundColor = "#f4f7ff";
   document.getElementById("faze").innerHTML = "Naktis";
   mirtis = document.getElementById(karti).innerHTML;
   document.getElementById(karti).innerHTML = "X";
@@ -977,22 +979,22 @@ function pakarti() {
   }
 }
 function baigti() {
-  document.getElementById("baigti1").innerHTML = "1: ";
+  document.getElementById("baigti1").innerHTML = "Marta: ";
   document.getElementById("baigti1").innerHTML += x1;
-  document.getElementById("baigti2").innerHTML = "2: ";
+  document.getElementById("baigti2").innerHTML = "Gabija P: ";
   document.getElementById("baigti2").innerHTML += x2;
-  document.getElementById("baigti3").innerHTML = "3: ";
+  document.getElementById("baigti3").innerHTML = "Justė: ";
   document.getElementById("baigti3").innerHTML += x3;
-  document.getElementById("baigti4").innerHTML = "4: ";
+  document.getElementById("baigti4").innerHTML = "Rugilė G: ";
   document.getElementById("baigti4").innerHTML += x4;
-  document.getElementById("baigti5").innerHTML = "5: ";
+  document.getElementById("baigti5").innerHTML = "Patrikas: ";
   document.getElementById("baigti5").innerHTML += x5;
-  document.getElementById("baigti6").innerHTML = "6: ";
+  document.getElementById("baigti6").innerHTML = "Ignas: ";
   document.getElementById("baigti6").innerHTML += x6;
-  document.getElementById("baigti7").innerHTML = "7: ";
+  document.getElementById("baigti7").innerHTML = "Gabija G: ";
   document.getElementById("baigti7").innerHTML += x7;
-  document.getElementById("baigti8").innerHTML = "8: ";
+  document.getElementById("baigti8").innerHTML = "Arsenijus: ";
   document.getElementById("baigti8").innerHTML += x8;
-  document.getElementById("baigti9").innerHTML = "9: ";
+  document.getElementById("baigti9").innerHTML = "Rugilė V: ";
   document.getElementById("baigti9").innerHTML += x9;
 }
