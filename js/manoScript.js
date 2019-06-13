@@ -10,11 +10,13 @@ var c1 = 0,
   c9 = 0;
 var mirtis = "";
 var vilkolakiutekstas = "";
+var doppelgangertekstas = "";
 var culttekstas = "";
 var seertekstas = "";
 var p = 0;
 var k = 0;
 var siaip = 0;
+var doppelgangerability = 0;
 function rasyti() {
   var tekstas = document.getElementById("a1").value;
   if (p == 1 || p == 6 || p == 2 || p == 100 || p == 4) {
@@ -149,6 +151,7 @@ function versti2() {
     document.getElementById("v0").src = pav;
     document.getElementById("v1").innerHTML =
       "Miestietis. Atsiprašau, bet nieko įdomaus nedarai.";
+    p = 101;
   }
 }
 function versti3() {
@@ -434,6 +437,7 @@ function versti7() {
     document.getElementById("v0").src = pav;
     document.getElementById("v1").innerHTML =
       "Gauruotoji. Jei tave aiškiaregė tikrins, pagalvos, kad tu vilkolakis.";
+    p = 101;
   }
 }
 function versti8() {
@@ -485,6 +489,124 @@ function versti8() {
     p = 6;
   }
 }
+function versti9() {
+  x = "p9";
+  pav = "image/Tanner.png";
+  if (siaip == 0) {
+    if (p == 51) {
+      x1 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+    if (p == 52) {
+      x2 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+    if (p == 53) {
+      x3 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+    if (p == 54) {
+      x4 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+    if (p == 55) {
+      x5 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+    if (p == 56) {
+      x6 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+    if (p == 57) {
+      x7 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+    if (p == 58) {
+      x8 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+    if (p == 59) {
+      x9 = "Tanner";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi kailiadirbys!";
+    }
+  }
+  if (p == 0) {
+    document.getElementById("v0").src = pav;
+    document.getElementById("v1").innerHTML =
+      "Kailiadirbys. Laimi, jei esi pakartas.";
+    p = 101;
+  }
+}
+function versti10() {
+  x = "p10";
+  pav = "image/Doppelganger.png";
+  if (siaip == 0) {
+    if (p == 51) {
+      x1 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+    if (p == 52) {
+      x2 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+    if (p == 53) {
+      x3 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+    if (p == 54) {
+      x4 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+    if (p == 55) {
+      x5 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+    if (p == 56) {
+      x6 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+    if (p == 57) {
+      x7 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+    if (p == 58) {
+      x8 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+    if (p == 59) {
+      x9 = "Doppelganger";
+      document.getElementById("v3").innerHTML =
+        "Wow geras!! Tu esi antrininkė!";
+    }
+  }
+  if (p == 0) {
+    document.getElementById("v0").src = pav;
+    document.getElementById("v1").innerHTML =
+      "Antrininkė. Pirmą naktį pasirink žmogų, kuriuo tapsi, kai jis mirs.";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    if (doppelgangerability == 0) {
+      document.getElementById("v3").innerHTML = "Rinkis!";
+      p = 8;
+    } else p = 101;
+  }
+}
 function nerodyti() {
   if (p == 1 || p == 6) {
     vilkolakiutekstas = document.getElementById("v4").innerHTML;
@@ -506,7 +628,7 @@ function diena() {
   if (k > 0 && y != d) {
     mirtis = document.getElementById(y).innerHTML;
     document.getElementById(y).innerHTML = "X";
-    document.getElementById("mire").innerHTML += " Labai gaila, bet mirė ";
+    document.getElementById("mire").innerHTML = " Labai gaila, bet mirė ";
     document.getElementById("mire").innerHTML += mirtis;
     mirtis = "";
   }
@@ -516,7 +638,7 @@ function naktis() {
   document.getElementById("faze").innerHTML = "Naktis";
   mirtis = document.getElementById(karti).innerHTML;
   document.getElementById(karti).innerHTML = "X";
-  document.getElementById("mire").innerHTML += " Labai gaila, bet pakorėme ";
+  document.getElementById("mire").innerHTML = " Labai gaila, bet pakorėme ";
   document.getElementById("mire").innerHTML += mirtis;
   mirtis = "";
   document.getElementById("v4").innerHTML = "";
@@ -552,6 +674,11 @@ function zversti1() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "1";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 function zversti2() {
@@ -581,6 +708,11 @@ function zversti2() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "2";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 /*function zversti2(event) {
@@ -622,6 +754,11 @@ function zversti3() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "3";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 function zversti4() {
@@ -651,6 +788,11 @@ function zversti4() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "4";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 function zversti5() {
@@ -680,6 +822,11 @@ function zversti5() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "5";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 function zversti6() {
@@ -709,6 +856,11 @@ function zversti6() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "6";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 function zversti7() {
@@ -738,6 +890,11 @@ function zversti7() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "7";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 function zversti8() {
@@ -767,6 +924,11 @@ function zversti8() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "8";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 function zversti9() {
@@ -796,6 +958,11 @@ function zversti9() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  } else if (p == 8) {
+    doppelgangertekstas = "9";
+    document.getElementById("v3").innerHTML = doppelgangertekstas;
+    doppelgangerability = 1;
+    p = 101;
   }
 }
 function pakarti() {
@@ -804,4 +971,24 @@ function pakarti() {
       "Paspauskite, kuris žaidėjas bus pakartas";
     p = 7;
   }
+}
+function baigti() {
+  document.getElementById("baigti1").innerHTML = "1: ";
+  document.getElementById("baigti1").innerHTML += x1;
+  document.getElementById("baigti2").innerHTML = "2: ";
+  document.getElementById("baigti2").innerHTML += x2;
+  document.getElementById("baigti3").innerHTML = "3: ";
+  document.getElementById("baigti3").innerHTML += x3;
+  document.getElementById("baigti4").innerHTML = "4: ";
+  document.getElementById("baigti4").innerHTML += x4;
+  document.getElementById("baigti5").innerHTML = "5: ";
+  document.getElementById("baigti5").innerHTML += x5;
+  document.getElementById("baigti6").innerHTML = "6: ";
+  document.getElementById("baigti6").innerHTML += x6;
+  document.getElementById("baigti7").innerHTML = "7: ";
+  document.getElementById("baigti7").innerHTML += x7;
+  document.getElementById("baigti8").innerHTML = "8: ";
+  document.getElementById("baigti8").innerHTML += x8;
+  document.getElementById("baigti9").innerHTML = "9: ";
+  document.getElementById("baigti9").innerHTML += x9;
 }
