@@ -632,7 +632,8 @@ function naktis() {
   document.getElementById("faze").innerHTML = "Naktis";
   mirtis = document.getElementById(karti).innerHTML;
   document.getElementById(karti).innerHTML = "X";
-  document.getElementById("mire").innerHTML = " Labai gaila, bet pakorėme ";
+  document.getElementById("mire").innerHTML =
+    " Labai gaila, bet pakorėme žmogų, kurio vardas ";
   document.getElementById("mire").innerHTML += mirtis;
   mirtis = "";
   document.getElementById("v4").innerHTML = "";
@@ -643,21 +644,22 @@ function naktis() {
 /*Zaidejai renkasi roles, arba yra zudomi, tikrinami.*/
 function zversti1() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Marta, paspausk ant rolės, kurią gavai!";
     p = 51;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "1 Mirs";
+    document.getElementById("v3").innerHTML = "Marta mirs";
     y = "z1";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "1 bus pakartas";
+    document.getElementById("v3").innerHTML = "Marta bus pakarta";
     karti = "z1";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "1 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Marta bus išsaugota";
     d = "z1";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "1 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Marta buvo priimta į kultą";
     c1 = 1;
     p = 100;
   } else if (p == 2) {
@@ -669,7 +671,7 @@ function zversti1() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "1";
+    doppelgangertekstas = "Marta";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
@@ -677,21 +679,22 @@ function zversti1() {
 }
 function zversti2() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Gabija, paspausk ant rolės, kurią gavai!";
     p = 52;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "2 Mirs";
+    document.getElementById("v3").innerHTML = "Gabija P mirs";
     y = "z2";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "2 bus pakartas";
+    document.getElementById("v3").innerHTML = "Gabija P bus pakarta";
     karti = "z2";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "2 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Gabija P bus išsaugota";
     d = "z2";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "2 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Gabija P buvo priimta į kultą";
     c2 = 1;
     p = 100;
   } else if (p == 2) {
@@ -703,7 +706,7 @@ function zversti2() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "2";
+    doppelgangertekstas = "Gabija G";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
@@ -723,21 +726,22 @@ function zversti2() {
 } */
 function zversti3() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Juste! Paspausk, kokią rolę gavai!";
     p = 53;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "3 Mirs";
+    document.getElementById("v3").innerHTML = "Justė mirs";
     y = "z3";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "3 bus pakartas";
+    document.getElementById("v3").innerHTML = "Justė bus pakarta";
     karti = "z3";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "3 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Justė bus išsaugota";
     d = "z3";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "3 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Justė buvo priimta į kultą";
     c3 = 1;
     p = 100;
   } else if (p == 2) {
@@ -749,7 +753,7 @@ function zversti3() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "3";
+    doppelgangertekstas = "Justė";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
@@ -757,21 +761,22 @@ function zversti3() {
 }
 function zversti4() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Rugile, paspausk ant rolės, kurią gavai!";
     p = 54;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "4 Mirs";
+    document.getElementById("v3").innerHTML = "Rugilė G mirs";
     y = "z4";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "4 bus pakartas";
+    document.getElementById("v3").innerHTML = "Rugilė G bus pakarta";
     karti = "z4";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "4 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Rugilė G bus išsaugota";
     d = "z4";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "4 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Rugilė G buvo priimta į kultą";
     c4 = 1;
     p = 100;
   } else if (p == 2) {
@@ -783,7 +788,7 @@ function zversti4() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "4";
+    doppelgangertekstas = "Rugilė G";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
@@ -791,21 +796,22 @@ function zversti4() {
 }
 function zversti5() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Patrikai!! Paspausk ant rolės, kurią gavai!";
     p = 55;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "5 Mirs";
+    document.getElementById("v3").innerHTML = "Patrikas mirs";
     y = "z5";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "5 bus pakartas";
+    document.getElementById("v3").innerHTML = "Patrikas bus pakartas";
     karti = "z5";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "5 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Patrikas bus išsaugotas";
     d = "z5";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "5 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Patrikas buvo priimtas į kultą";
     c5 = 1;
     p = 100;
   } else if (p == 2) {
@@ -817,7 +823,7 @@ function zversti5() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "5";
+    doppelgangertekstas = "Patrikas";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
@@ -825,21 +831,22 @@ function zversti5() {
 }
 function zversti6() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Ignai, paspausk, kokią rolę gavai!";
     p = 56;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "6 Mirs";
+    document.getElementById("v3").innerHTML = "Ignas mirs :((((";
     y = "z6";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "6 bus pakartas";
+    document.getElementById("v3").innerHTML = "Ignas bus pakartas";
     karti = "z6";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "6 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Ignas bus išsaugotas";
     d = "z6";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "6 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Ignas buvo priimtas į kultą";
     c6 = 1;
     p = 100;
   } else if (p == 2) {
@@ -851,7 +858,7 @@ function zversti6() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "6";
+    doppelgangertekstas = "Ignas";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
@@ -859,21 +866,22 @@ function zversti6() {
 }
 function zversti7() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Gabija, paspausk ant rolės, kurią gavai!";
     p = 57;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "7 Mirs";
+    document.getElementById("v3").innerHTML = "Gabija G mirs";
     y = "z7";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "7 bus pakartas";
+    document.getElementById("v3").innerHTML = "Gabija G bus pakarta";
     karti = "z7";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "7 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Gabija G bus išsaugota";
     d = "z7";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "7 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Gabija G buvo priimta į kultą";
     c7 = 1;
     p = 100;
   } else if (p == 2) {
@@ -885,7 +893,7 @@ function zversti7() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "7";
+    doppelgangertekstas = "Gabija G";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
@@ -893,21 +901,22 @@ function zversti7() {
 }
 function zversti8() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Arsenijau, paspausk ant rolės, kurią gavai!";
     p = 58;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "8 Mirs";
+    document.getElementById("v3").innerHTML = "Arsenijus mirs";
     y = "z8";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "8 bus pakartas";
+    document.getElementById("v3").innerHTML = "Arsenijus bus pakartas";
     karti = "z8";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "8 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Arsenijus bus išsaugotas";
     d = "z8";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "8 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Arsenijus buvo priimtas į kultą";
     c8 = 1;
     p = 100;
   } else if (p == 2) {
@@ -919,7 +928,7 @@ function zversti8() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "8";
+    doppelgangertekstas = "Arsenijus";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
@@ -927,21 +936,22 @@ function zversti8() {
 }
 function zversti9() {
   if (p == 0) {
-    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    document.getElementById("v1").innerHTML =
+      "Rugile, paspausk ant rolės, kurią gavai!";
     p = 59;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = "9 Mirs";
+    document.getElementById("v3").innerHTML = "Rugilė V mirs";
     y = "z9";
     k++;
   } else if (p == 7) {
-    document.getElementById("v3").innerHTML = "9 bus pakartas";
+    document.getElementById("v3").innerHTML = "Rugilė V bus pakarta";
     karti = "z9";
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = "9 bus išsaugotas";
+    document.getElementById("v3").innerHTML = "Rugilė V bus išsaugota";
     d = "z9";
   } else if (p == 4) {
-    document.getElementById("v3").innerHTML = "9 buvo priimtas į kultą";
+    document.getElementById("v3").innerHTML = "Rugilė V buvo priimta į kultą";
     c9 = 1;
     p = 100;
   } else if (p == 2) {
@@ -953,7 +963,7 @@ function zversti9() {
       p = 100;
     }
   } else if (p == 8) {
-    doppelgangertekstas = "9";
+    doppelgangertekstas = "Rugilė V";
     document.getElementById("v3").innerHTML = doppelgangertekstas;
     doppelgangerability = 1;
     p = 101;
