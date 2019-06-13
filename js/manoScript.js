@@ -1,4 +1,4 @@
-var x1, x2, x3, x4, x5, x6, x7, x8, x9, y, d;
+var x1, x2, x3, x4, x5, x6, x7, x8, x9, y, d, karti;
 var c1 = 0,
   c2 = 0,
   c3 = 0,
@@ -8,6 +8,7 @@ var c1 = 0,
   c7 = 0,
   c8 = 0,
   c9 = 0;
+var mirtis = "";
 var vilkolakiutekstas = "";
 var culttekstas = "";
 var seertekstas = "";
@@ -16,20 +17,10 @@ var k = 0;
 var siaip = 0;
 function rasyti() {
   var tekstas = document.getElementById("a1").value;
-  if (p == 1 || p == 6) {
+  if (p == 1 || p == 6 || p == 2 || p == 100 || p == 4) {
     document.getElementById("v4").innerHTML += tekstas;
     document.getElementById("v4").innerHTML += " ";
-    document.getElementById("a1").innerHTML = " ";
-  }
-  if (p == 4) {
-    document.getElementById("v4").innerHTML += tekstas;
-    document.getElementById("v4").innerHTML += " ";
-    document.getElementById("a1").innerHTML = " ";
-  }
-  if (p == 2 || p == 100) {
-    document.getElementById("v4").innerHTML += tekstas;
-    document.getElementById("v4").innerHTML += " ";
-    document.getElementById("a1").innerHTML = " ";
+    document.getElementById("a1").value = "";
   }
 }
 function istrinti() {
@@ -513,12 +504,24 @@ function nerodyti() {
 }
 function diena() {
   if (k > 0 && y != d) {
+    mirtis = document.getElementById(y).innerHTML;
     document.getElementById(y).innerHTML = "X";
+    document.getElementById("mire").innerHTML += " Labai gaila, bet mirė ";
+    document.getElementById("mire").innerHTML += mirtis;
+    mirtis = "";
   }
   document.getElementById("faze").innerHTML = "Diena";
 }
 function naktis() {
   document.getElementById("faze").innerHTML = "Naktis";
+  mirtis = document.getElementById(karti).innerHTML;
+  document.getElementById(karti).innerHTML = "X";
+  document.getElementById("mire").innerHTML += " Labai gaila, bet pakorėme ";
+  document.getElementById("mire").innerHTML += mirtis;
+  mirtis = "";
+  document.getElementById("v4").innerHTML = "";
+  document.getElementById("v3").innerHTML = "";
+  p = 0;
 }
 
 /*Zaidejai renkasi roles, arba yra zudomi, tikrinami.*/
@@ -531,6 +534,9 @@ function zversti1() {
     document.getElementById("v3").innerHTML = "1 Mirs";
     y = "z1";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "1 bus pakartas";
+    karti = "z1";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "1 bus išsaugotas";
     d = "z1";
@@ -557,6 +563,9 @@ function zversti2() {
     document.getElementById("v3").innerHTML = "2 Mirs";
     y = "z2";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "2 bus pakartas";
+    karti = "z2";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "2 bus išsaugotas";
     d = "z2";
@@ -595,6 +604,9 @@ function zversti3() {
     document.getElementById("v3").innerHTML = "3 Mirs";
     y = "z3";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "3 bus pakartas";
+    karti = "z3";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "3 bus išsaugotas";
     d = "z3";
@@ -621,6 +633,9 @@ function zversti4() {
     document.getElementById("v3").innerHTML = "4 Mirs";
     y = "z4";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "4 bus pakartas";
+    karti = "z4";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "4 bus išsaugotas";
     d = "z4";
@@ -647,6 +662,9 @@ function zversti5() {
     document.getElementById("v3").innerHTML = "5 Mirs";
     y = "z5";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "5 bus pakartas";
+    karti = "z5";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "5 bus išsaugotas";
     d = "z5";
@@ -673,6 +691,9 @@ function zversti6() {
     document.getElementById("v3").innerHTML = "6 Mirs";
     y = "z6";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "6 bus pakartas";
+    karti = "z6";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "6 bus išsaugotas";
     d = "z6";
@@ -699,6 +720,9 @@ function zversti7() {
     document.getElementById("v3").innerHTML = "7 Mirs";
     y = "z7";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "7 bus pakartas";
+    karti = "z7";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "7 bus išsaugotas";
     d = "z7";
@@ -721,10 +745,13 @@ function zversti8() {
     document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
     p = 58;
   }
-  if (p == 8) {
+  if (p == 1) {
     document.getElementById("v3").innerHTML = "8 Mirs";
     y = "z8";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "8 bus pakartas";
+    karti = "z8";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "8 bus išsaugotas";
     d = "z8";
@@ -751,6 +778,9 @@ function zversti9() {
     document.getElementById("v3").innerHTML = "9 Mirs";
     y = "z9";
     k++;
+  } else if (p == 7) {
+    document.getElementById("v3").innerHTML = "9 bus pakartas";
+    karti = "z9";
   } else if (p == 3) {
     document.getElementById("v3").innerHTML = "9 bus išsaugotas";
     d = "z9";
@@ -766,5 +796,12 @@ function zversti9() {
       document.getElementById("v3").innerHTML = "Ne vilkolakis";
       p = 100;
     }
+  }
+}
+function pakarti() {
+  if (p == 0) {
+    document.getElementById("v3").innerHTML =
+      "Paspauskite, kuris žaidėjas bus pakartas";
+    p = 7;
   }
 }
