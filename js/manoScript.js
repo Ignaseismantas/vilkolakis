@@ -91,7 +91,9 @@ function versti1() {
   }
   if (p == 0) {
     document.getElementById("v1").innerHTML =
-      "Vilkolakis. Pasirink žaidėją, jis mirs šią naktį. Taip pat gali susirašinėti su vilkolakių komandos nariais.";
+      "Vilkolakis. Pasirink žaidėją, jis mirs šią naktį. ";
+    document.getElementById("v5").innerHTML =
+      "Taip pat gali susirašinėti su vilkolakių komandos nariais.";
     document.getElementById("v0").src = pav;
     document.getElementById("v4").innerHTML = vilkolakiutekstas;
     p = 1;
@@ -103,54 +105,45 @@ function versti2() {
   if (siaip == 0) {
     if (p == 51) {
       x1 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
     if (p == 52) {
       x2 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
     if (p == 53) {
       x3 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
     if (p == 54) {
       x4 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
     if (p == 55) {
       x5 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
     if (p == 56) {
       x6 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
     if (p == 57) {
       x7 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
     if (p == 58) {
       x8 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
     if (p == 59) {
       x9 = "Villager";
-      document.getElementById("v3").innerHTML =
-        "Wow geras!! Tu esi Miestietis!";
+      document.getElementById("v3").innerHTML = "Wow geras!! Tu esi kaimietis!";
     }
   }
   if (p == 0) {
     document.getElementById("v0").src = pav;
     document.getElementById("v1").innerHTML =
-      "Miestietis. Atsiprašau, bet nieko įdomaus nedarai.";
+      "Kaimietis. Atsiprašau, bet nieko įdomaus nedarai.";
     p = 101;
   }
 }
@@ -622,6 +615,7 @@ function nerodyti() {
   p = 0;
   document.getElementById("v1").innerHTML = "Paspauskite, kuris žaidėjas esate";
   document.getElementById("v4").innerHTML = "";
+  document.getElementById("v5").innerHTML = "";
   document.getElementById("v3").innerHTML = "";
 }
 function diena() {
