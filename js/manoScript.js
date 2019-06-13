@@ -1,4 +1,13 @@
 var x1, x2, x3, x4, x5, x6, x7, x8, x9, y, d;
+var c1 = 0,
+  c2 = 0,
+  c3 = 0,
+  c4 = 0,
+  c5 = 0,
+  c6 = 0,
+  c7 = 0,
+  c8 = 0,
+  c9 = 0;
 var vilkolakiutekstas = "";
 var culttekstas = "";
 var seertekstas = "";
@@ -9,14 +18,17 @@ function rasyti() {
   if (p == 1) {
     document.getElementById("v4").innerHTML += tekstas;
     document.getElementById("v4").innerHTML += " ";
+    document.getElementById("a1").innerHTML = "";
   }
   if (p == 4) {
     document.getElementById("v4").innerHTML += tekstas;
     document.getElementById("v4").innerHTML += " ";
+    document.getElementById("a1").innerHTML = "";
   }
   if (p == 2 || p == 100) {
     document.getElementById("v4").innerHTML += tekstas;
     document.getElementById("v4").innerHTML += " ";
+    document.getElementById("a1").innerHTML = "";
   }
 }
 function istrinti() {
@@ -146,19 +158,21 @@ function naktis() {
 }
 
 /*Zaidejai renkasi roles, arba yra zudomi, tikrinami.*/
-function zversti(event) {
-  var value = event.target.innerHTML;
+function zversti1() {
   if (p == 0) {
     document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
     p = 51;
   }
   if (p == 1) {
-    document.getElementById("v3").innerHTML = `${value} Mirs`;
-    y = `z${value}`;
+    document.getElementById("v3").innerHTML = "1 Mirs";
+    y = "z1";
     k++;
   } else if (p == 3) {
-    document.getElementById("v3").innerHTML = `${value} bus išsaugotas`;
-    d = `z${value}`;
+    document.getElementById("v3").innerHTML = "1 bus išsaugotas";
+    d = "z1";
+  } else if (p == 4) {
+    c1 = 1;
+    p = 100;
   } else if (p == 2) {
     if (x1 == "Werewolf" || x1 == "Lycan") {
       document.getElementById("v3").innerHTML = "Vilkolakis";
@@ -169,7 +183,29 @@ function zversti(event) {
     }
   }
 }
-function zversti2(event) {
+function zversti2() {
+  if (p == 0) {
+    document.getElementById("v1").innerHTML = "Paspauskite, kokią rolę gavote!";
+    p = 52;
+  }
+  if (p == 1) {
+    document.getElementById("v3").innerHTML = "2 Mirs";
+    y = "z2";
+    k++;
+  } else if (p == 3) {
+    document.getElementById("v3").innerHTML = "2 bus išsaugotas";
+    d = "z2";
+  } else if (p == 2) {
+    if (x2 == "Werewolf" || x2 == "Lycan") {
+      document.getElementById("v3").innerHTML = "Vilkolakis";
+      p = 100;
+    } else {
+      document.getElementById("v3").innerHTML = "Ne vilkolakis";
+      p = 100;
+    }
+  }
+}
+/*function zversti2(event) {
   var value = event.target.innerHTML;
   if (p == 1) {
     document.getElementById("v3").innerHTML = `${value} Mirs`;
@@ -180,7 +216,7 @@ function zversti2(event) {
     document.getElementById("v3").innerHTML = `${value} bus išsaugotas`;
     d = `z${value}`;
   }
-}
+} */
 function zversti3() {
   if (p == 1) {
     document.getElementById("v3").innerHTML = "3 Mirs";
