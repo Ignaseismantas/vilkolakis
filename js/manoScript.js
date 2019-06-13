@@ -104,7 +104,7 @@ function versti4() {
 }
 function versti6() {
   x = "p6";
-  pav = "image/Serifas.png";
+  pav = "image/Vilkolakis.png";
   if (p == 51) {
     x1 = "Cultleader";
     document.getElementById("v3").innerHTML =
